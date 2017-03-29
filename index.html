@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/> -->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap/js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/nokia.jpg','imagenes/zte.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Telefonía celular</h1>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-caract-r">
+<h2>¿Qué es un telefono celular?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la telefonía celular</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificación de la telefonía celular</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias que manejan la telefonía en México</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-caract-r">
+<h2>Telefonos celulares del futuro</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion dos</h4>
+<h4>Sergio Hared Campeche Jimenez</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>¿Qué es un teléfono celular?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen 1</h1>
+<div>
+<img src="imagenes/telefono1.jpg" width="50%" height="50%">
+  </div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen 2</h1>
+<div>
+<img src="imagenes/telefono2.jpg" width="50%" height="50%">
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHCJ</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Historia de la telefonía celular</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+Alexander Graham Bell crea y patenta el primer teléfono en 1876, en 1899 AT&T se convirtio en la compañía  de telefonía mas grande del mundo. Los primeros teléfonos no tenian teclas por lo que  las llamadas eran orientadas por operradores humanos en centrales telefonicas.
+<br>En 1970 la empresa "Corning Glass" fabrico la fibra optica la cual permite enviar la señal casi a la velociada de la luz.
+<br>Más tarde los telefonos fueron modernizandoce.
+<br>El precursor del teléfono móvil fue el "teléfono del auto".
+<br>El primer teléfono móvil que se creo fue el "Motorora DynaTac 8000X".
+<br> Despues se creo la tecnología celular que es una red para teléfonos moviles que consiste en antenas ubicadas en una ciudad que brindan el servicio telefonico inalambricamente.
+<br> Más tarde los telefonos celulares fueron evolucionando.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen 1</h1>
+<div>
+<img src="imagenes/telefono3.jpg" width="40%" height="40%">
+  </div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen 2</h1>
+<div>
+<img src="imagenes/motorola.jpg" width="40%" height="40%">
+  </div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHCJ</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Clasificación de los telefonos celulares</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+Los teléfonos celulares se clasifican de la siguiente manera:
+<p> <h4>Gama Baja:</h4> 
+<p>Estos celulares son de precio economico, cuentan con caracteristicas muy bajas como por ejemplo: poca memoria RAM, camaras VGA, tienen poca capacidad de almacenamiento, sus pantallas son de escasas dimensiones y resolución, etc.
+<div data-role="collapsible" data-content-theme="false">
+<h1>celular gama baja</h1>
+<div>
+<img src="imagenes/baja.jpg" width="40%" height="40%">
+  </div>
+</div>
+<p><h4>Gama Media:</h4>
+<p> Estos celulares son de precio un poco más elevado que los de gama baja y cuentan con caracteristicas de calidad como por ejemplo: tienen pantallas de calidad pero de menor tamaño, resolución y profundidad de pixeles por pulgada, cuentan con meoria RAM de 1GB, su camara es de mejor calidad, mejor conectividad a las redes y más duracion de la batería,etc.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Celular gama media</h1>
+<div>
+<img src="imagenes/media.jpg" width="50%" height="50%">
+  </div>
+</div>
+<p><h4>Gama Alta:</h4>
+<p>Estos celulares son de precio elevado y cuenta con caracteristicas muy buenas por ejemplo: Mejor procesador, mayor memoria RAM, mayor capacidad de almacenamiento, camaras de alta calidad, bataría de gran duración, pantalla de alta definición, etc.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Celular gama alta</h1>
+<div>
+<img src="imagenes/alta.png" width="40%" height="40%">
+  </div>
+</div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHCJ</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Compañías que manejan la telefonía celular en México</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+ Las compañías de telefonía móvil que predominan más en México son:
+ </div>
+ </div>
+ <div>
+ <ul>
+ <li>Telcel</li>
+ <li>Movistar</li>
+ <li>Unefon</li>
+ <li>AT&T </li> 
+ <li>Nextel</li>
+ <li>Iusacel</li>
+ </ul>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>imagen 1</h1>
+<div>
+<img src="imagenes/empresas.png" width="40%" height="40%">
+  </div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>imagen 2</h1>
+<div>
+<img src="imagenes/atyt.jpg" width="40%" height="40%">
+  </div>
+</div>
+</div>
+</div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHCJ</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Telefonos del futuro</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+Algunos prototipos de teléfonos celulares que podriamos ver en algun futuro son:
+</div>
+</div>
+<div>
+ <ul>
+ <li>Samsung ces</li>
+ <li>Mozilla Seabird</li>
+ <li>Nokia forma humana</li>
+ <li>ZTE Eco-Mobius</li> 
+ <li>Polytron Technologies</li>
+ </ul>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen 1</h1>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tel_futuro','','imagenes/nokia.jpg',1)"><img src="imagenes/samsung.jpg" width="275" height="183" id="tel_futuro"></a>
+  </div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen 2</h1>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tel_futuro2','','imagenes/zte.jpg',1)"><img src="imagenes/mozilla.jpg" width="660" height="353" id="tel_futuro2"></a>
+  </div>
+</div
+><div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, SHCJ</h4>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
