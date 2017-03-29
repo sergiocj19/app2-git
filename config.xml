@@ -35,6 +35,6 @@ Aplicacion que muestra informacion de la telefonia celular
   
   <!-- Colocar icono app -->
   
-<icon src="res/android/mdp1.png"/>
+<icon src="res/android/mdpi.png"/>
 
 </widget>
